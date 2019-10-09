@@ -98,7 +98,7 @@ require "db_files/DB_queries.php";
           <?php
 
          /*POPULATE TABLE WITH DB DATA */
-         $result = mysqli_query($conn, $sql2isilon);
+         $result = mysqli_query($conn, $sql2access);
          if($result):
             if(mysqli_num_rows($result) == 0){
                   $output = "No search results";
@@ -108,13 +108,14 @@ require "db_files/DB_queries.php";
                         <td>
       
               </td>
-                        <td><?php echo $row['EXPORT']?></td>
+                        /* In this case we have this rows. You can change to your convenience */
+                        <td><?php echo $row['<ROW_EXPORT']?></td>
    
-                        <td><?php echo $row['DNS']?></td>
+                        <td><?php echo $row['<ROW_DNS>']?></td>
 
-                        <td><?php echo  $row['OUTBOUND']?></td>
+                        <td><?php echo  $row['<ROW_OUTBOUND>']?></td>
               
-                        <td><?php echo $row['ISILON']?></td>
+                        <td><?php echo $row['<ROW_NFS>']?></td>
                       </tr>
         <?php 
             }
