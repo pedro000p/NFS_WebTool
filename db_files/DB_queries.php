@@ -2,10 +2,10 @@
 
 
 /*Query to select all the records*/
-$sql2isilon = "Select * from access";
+$sql2access = "Select * from <access_table>";
 
-$sql2exports = "Select * from exports";
+$sql2exports = "Select * from <exports_table>";
 
-$sql2clients = "Select * from clients";
+$sql2clients = "Select * from <clients_table>";
 
 $sql2Showlogs = "Select * from audit";
