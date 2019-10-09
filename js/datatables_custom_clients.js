@@ -112,7 +112,7 @@ $(document).ready(function() {
 		{ defaultContent: "" } ,
 		{ mData: 'DNS' },
 		{ mData: 'OUTBOUND' },
-		{ mData: 'ISILON' }
+		{ mData: 'NFS' }
 		],
 		stateSave: true                  	
 
