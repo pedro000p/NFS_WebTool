@@ -1,15 +1,3 @@
-<?php
-
-/*DB_connection*/
-/*require "db_files/DB_conn.php";*/
-
-
-/*DB_Queries*/
-/*require "db_files/DB_queries.php";
-*/
-
-?>
-
 
 <!-- NAV BAR -->
 <!-- <div class=""> -->
