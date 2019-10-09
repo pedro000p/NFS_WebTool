@@ -111,7 +111,7 @@ $(document).ready(function() {
 		{ mData: 'EXPORT' } ,
 		{ mData: 'DNS' },
 		{ mData: 'OUTBOUND' },
-		{ mData: 'ISILON' }
+		{ mData: 'NFS' }
 		],
 		stateSave: true                  
 	
