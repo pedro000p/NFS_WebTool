@@ -1,0 +1,206 @@
+/*Classes/IDs/TAGs that are used by bootstrap 4 
+used to force the customizations since it is the last .css file in the list.*/
+
+body {
+    font-size: .9rem;
+}
+
+.pagination {
+    clear:both;
+    position:relative;
+    font-size:13px;
+    text-align:center;
+}
+
+.pagination span, .pagination a {
+    display:inline-block;
+    margin: 2px 2px 2px 2px;
+    padding:6px 9px 5px 9px;
+    text-decoration:none;
+}
+
+
+.pagination .current{
+    padding:6px 9px 5px 9px;
+    font-weight: bold;
+    background: green;
+}
+.pagination .page-link{
+    font-weight: bold;
+    border: solid #bdbdbd .5px;
+    background: #eeeeee;
+    line-height: 1.50;
+}
+
+
+.paginate_button .page-item .active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #37424e;
+    border-color: #007bff;
+}
+
+.pagination .page-link:hover{
+    padding:6px 9px 5px 9px;
+    font-weight: bold;
+    color:  orange;
+   /* border: solid orange .5px;*/
+}
+
+.sel {
+	font-size:12px;
+    text-align:center;
+}
+
+.opt {
+	font-size:12px;
+    text-align:center;
+}
+
+.btnEnt {
+	padding: 0 0;
+}
+
+.btn-group,
+.dropdown-menu {
+  max-width: 50px;
+}
+.dropdown-menu option {
+  white-space: normal!important;
+  
+}
+.dropDownSelected {
+  white-space: normal;
+  margin-right: 22px !important;
+}
+
+.table-hover tbody tr:hover {
+    color: #212529;
+    background-color: #b3d7ff;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0.55em;
+    white-space: nowrap;
+}
+
+a {
+    color: #c6ccd4;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
+    background-color: #1b3042;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #1b3042;
+    border-color: #007bff;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #343a40 !important;
+    border-color: #212529 !important;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #212529 !important;
+    border-color: #0062cc !important;
+}
+
+
+.btn-secondary {
+    color: #fff;
+    background-color: #273b4c;
+    border-color: #000000;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #262729;
+    border-color: #0062cc;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #212529;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #212529;
+    border-color: #28a745;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #262729;
+    border-color: #262729;
+}
+.btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 7, 14, 0);
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0);
+}
+
+
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #343a40;
+}
+
+.btn-info:hover {
+    color: #faf;
+    background-color: #138496;
+    border-color: #343a40;
+    }
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #212529;
+}
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: #117a8b;
+    border-color: #343a40;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgb(52, 58, 64);
+}
+
+/*.form-control:focus {
+  
+    
+    outline: 0;
+ 
+}*/
+
+.dt-button.dropdown-item.buttons-columnVisibility {
+    font-size: small;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #273b4c;
+}
+
+
+
+/*.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #f8f9fa;
+}
+
