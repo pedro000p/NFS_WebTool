@@ -1,5 +1,5 @@
 {
-  "name": "isilon_frontend",
+  "name": "NFS_WebTool",
   "version": "1.1.0",
   "description": "Web page to manage NFS resources",
   "main": "index.php",
@@ -20,11 +20,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://sugit101.ritta.local/git_ppereira/isilon_frontend.git"
-  },
   "keywords": [],
-  "author": "Pedro Pereira <pedro.r.pereira@gfi.pt>",
+  "author": "Pedro Pereira",
   "license": "MIT"
 }
