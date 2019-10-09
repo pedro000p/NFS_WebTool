@@ -4,7 +4,7 @@
 
 #### 1.1.2
 - Changed the disposition of layout on the top nav, colors and added go to Bottom of page, on the file *navs_upper.php*.
-- Added log box to all the pages of Isilon with collapse option which is by default open. Added button to go to the Top of page. Created on a new file *navs_upper2.php*.  
+- Added log box to all the pages of NFS_WebTool with collapse option which is by default open. Added button to go to the Top of page. Created on a new file *navs_upper2.php*.  
 
 -------------------
 
@@ -83,7 +83,7 @@ If necessary, the steps are the following:
     
 -------------------
 
-#### Download Isilon_Frontend with *git* or by direct download. 
+#### Download NFS_WebTool with *git* or by direct download. 
 
 -------------------
 
@@ -96,7 +96,7 @@ If necessary, the steps are the following:
     npm config set proxy http://user:password@proxy:port
     npm config set https-proxy http://user:password@proxy:port
     ```  
-2. Go to the Isilon_Frontend folder:  
+2. Go to the NFS_WebTool folder:  
     ```bash
     cd isilon_frontend
     ```  
@@ -115,7 +115,7 @@ If necessary, the steps are the following:
 
 -------------------
 
-The folder structure, inside the Master *isilon_frontend*, to work properly should stay like the following after the installed dependencies:  
+The folder structure, inside the Master *NFS_WebTool*, to work properly should stay like the following after the installed dependencies:  
 
     .
     ├── clients.php
@@ -141,6 +141,6 @@ The folder structure, inside the Master *isilon_frontend*, to work properly shou
 
 -------------------
 
-1. Change line 4 of file `isilon_frontend/db_files/DB_conn.php` with the right data `<USER> <PASSWORD> <DB>`
+1. Change line 4 of file `NFS_WebTool/db_files/DB_conn.php` with the right data `<USER> <PASSWORD> <DB>`
 
 -------------------
