@@ -51,31 +51,27 @@ require "db_files/DB_queries.php";
          
          <hr class="my-8">
          <p>NFS Resources</p>
-         <!-- <i class="badge badge-pill badge-white">NFS Resources</i> -->
-         <!--    -->
         </div>
 
-     
-  
-        <!-- NAVBAR to select Isilon DB tables -->
-       <nav class="navbar navbar-dark bg-dark rounded pos-f-t">
+
+          <!-- NAVBAR to select Isilon DB tables -->
+            <nav class="navbar navbar-dark bg-dark rounded pos-f-t" >
           <div class="btn-toolbar text-right mb-1 mt-1" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group-sm" role="group" aria-label="First group">
               <span class=" ml-2" style="color: #bdc1bd;">Isilon DB ➡ Choose Table ➡ </span>
-              <button title="Access, main table from DB - Active" type="button" class="btn btn-sm btn-success" onclick="window.location.href='index.php'">Access</button>
-              <button title="Exports table from DB" type="button" class="btn btn-sm btn-secondary" onclick="window.location.href='exports.php'">Exports</button>
+              <button title="Access, main table from DB" type="button" class="btn btn-sm btn-secondary" onclick="window.location.href='index.php'">Access</button>
+              <button title="Exports table from DB - Active" type="button" class="btn btn-sm btn-success" onclick="window.location.href='exports.php'">Exports</button>
               <button title="Clients table from DB" type="button" class="btn btn-sm btn-secondary "onclick="window.location.href='clients.php'">Clients</button>
             </div>
         </div>
         <button title="Reload page/table" type="button" class="btn btn-sm btn-secondary mr-2" style="background-color: #44445e; color: white;" onclick="window.location.reload()"><i class="fa fa-refresh"></i></button>
-
       </nav>
-      <?php
+
+          <?php
         /*NAV BARs*/
         require "navs_upper.php";
 
         ?>
-
     <table id="myTable" class="table table-hover table-bordered table-striped rounded">
       
         
@@ -88,9 +84,6 @@ require "db_files/DB_queries.php";
                 </span>
           </th>
           <th scope="col">EXPORT</th>
-          <th scope="col">DNS</th>
-          <th scope="col">OUTBOUND</th>
-          <th scope="col">ISILON</th>
         </tr>
       </thead>
       <tbody>
@@ -98,7 +91,7 @@ require "db_files/DB_queries.php";
           <?php
 
          /*POPULATE TABLE WITH DB DATA */
-         $result = mysqli_query($conn, $sql2isilon);
+         $result = mysqli_query($conn, $sql2exports);
          if($result):
             if(mysqli_num_rows($result) == 0){
                   $output = "No search results";
@@ -109,12 +102,7 @@ require "db_files/DB_queries.php";
       
               </td>
                         <td><?php echo $row['EXPORT']?></td>
-   
-                        <td><?php echo $row['DNS']?></td>
-
-                        <td><?php echo  $row['OUTBOUND']?></td>
-              
-                        <td><?php echo $row['ISILON']?></td>
+  
                       </tr>
         <?php 
             }
@@ -132,19 +120,15 @@ require "db_files/DB_queries.php";
      
           </th>
           <th scope="col">EXPORT</th>
-          <th scope="col">DNS</th>
-          <th scope="col">OUTBOUND</th>
-          <th scope="col">ISILON</th>
         </tr>
     </tfoot>
     </table>
 
-     <?php
+    <?php
       /*NAV BARs LOGS*/
       require "navs_upper2.php";
    
       ?>
-
     
     <div> <!-- close container --> 
       
@@ -172,7 +156,7 @@ require "db_files/DB_queries.php";
   
     
     <!-- Custom Datatables JS  -->
-    <script src="js/datatables_custom_main.js"></script>
+    <script src="js/datatables_custom_exports.js"></script>
     
 
 <!-- Append class to datatables element after load -->
@@ -182,7 +166,6 @@ require "db_files/DB_queries.php";
     document.getElementById('myTable_info').className += ' font-italic';
 
   });
-
 
 </script>
 
