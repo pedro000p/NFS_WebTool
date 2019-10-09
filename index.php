@@ -108,14 +108,14 @@ require "db_files/DB_queries.php";
                         <td>
       
               </td>
-                        /* In this case we have this rows. You can change to your convenience */
-                        <td><?php echo $row['<ROW_EXPORT']?></td>
+                        <!-- In this case we have this rows. You can change to your convenience -->
+                        <td><?php echo $row['<EXPORT>']?></td>
    
-                        <td><?php echo $row['<ROW_DNS>']?></td>
+                        <td><?php echo $row['<DNS>']?></td>
 
-                        <td><?php echo  $row['<ROW_OUTBOUND>']?></td>
+                        <td><?php echo  $row['<OUTBOUND>']?></td>
               
-                        <td><?php echo $row['<ROW_NFS>']?></td>
+                        <td><?php echo $row['<NFS>']?></td>
                       </tr>
         <?php 
             }
@@ -135,7 +135,7 @@ require "db_files/DB_queries.php";
           <th scope="col">EXPORT</th>
           <th scope="col">DNS</th>
           <th scope="col">OUTBOUND</th>
-          <th scope="col">ISILON</th>
+          <th scope="col">NFS</th>
         </tr>
     </tfoot>
     </table>
