@@ -98,7 +98,7 @@ If necessary, the steps are the following:
     ```  
 2. Go to the NFS_WebTool folder:  
     ```bash
-    cd isilon_frontend
+    cd NFS_WebTool
     ```  
 3. Inside the folder type:  
     ```bash
