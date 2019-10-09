@@ -109,13 +109,13 @@ require "db_files/DB_queries.php";
       
               </td>
                         <!-- In this case we have this rows. You can change to your convenience -->
-                        <td><?php echo $row['<EXPORT>']?></td>
+                        <td><?php echo $row['EXPORT']?></td>
    
-                        <td><?php echo $row['<DNS>']?></td>
+                        <td><?php echo $row['DNS']?></td>
 
-                        <td><?php echo  $row['<OUTBOUND>']?></td>
+                        <td><?php echo  $row['OUTBOUND']?></td>
               
-                        <td><?php echo $row['<NFS>']?></td>
+                        <td><?php echo $row['NFS']?></td>
                       </tr>
         <?php 
             }
