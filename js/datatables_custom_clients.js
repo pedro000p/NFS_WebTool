@@ -31,7 +31,7 @@ $(document).ready(function() {
  
                     $.fn.dataTable.fileSave(
                         new Blob( [ JSON.stringify( data ) ] ),
-                        'Export_ISILON-'+ n + '.json'
+                        'Export_NFS-'+ n + '.json'
                     );
                 }
                 },
