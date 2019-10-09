@@ -101,7 +101,8 @@ require "db_files/DB_queries.php";
                         <td>
       
               </td>
-                        <td><?php echo $row['EXPORT']?></td>
+                         <!-- In this case we have this rows. You can change to your convenience -->
+                        <td><?php echo $row['<EXPORT>']?></td>
   
                       </tr>
         <?php 
